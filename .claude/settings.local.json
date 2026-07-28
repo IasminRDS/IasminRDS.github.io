@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(node --check script.js)",
+      "mcp__claude-in-chrome__list_connected_browsers"
+    ]
+  }
+}

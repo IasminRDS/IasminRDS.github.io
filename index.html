@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Iasmin Ribeiro de Souza — desenvolvedora full-stack e de dados. Projetos em React, Python, PHP, SQL e Power BI."
+    />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+    <meta name="theme-color" content="#0b1120" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Iasmin Ribeiro de Souza · Desenvolvedora Full-stack & Dados" />
+    <meta
+      property="og:description"
+      content="Projetos em React, Python, PHP, SQL e Power BI."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Iasmin Ribeiro de Souza · Desenvolvedora Full-stack & Dados</title>
+    <script>
+      // Aplica o tema antes de a página pintar, evitando a "piscada" de cor.
+      (() => {
+        const salvo = localStorage.getItem('tema');
+        const escuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = salvo || (escuro ? 'dark' : 'light');
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- ===== Navegação ===== -->
+    <header class="nav">
+      <a href="#topo" class="nav__logo">&lt;Iasmin/&gt;</a>
+      <nav class="nav__links">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
+    </header>
+
+    <!-- ===== Hero ===== -->
+    <section id="topo" class="hero">
+      <div class="hero__content reveal">
+        <p class="hero__hello">👋 Olá, eu sou</p>
+        <h1 class="hero__name">Iasmin Ribeiro de Souza</h1>
+        <h2 class="hero__role">
+          Desenvolvedora <span class="accent">Full-stack</span> &amp;
+          <span class="accent">Dados</span>
+        </h2>
+        <p class="hero__desc">
+          Transformo ideias em aplicações web completas e dados em decisões.
+          Trabalho com React, Python, PHP, SQL e Power BI.
+        </p>
+        <div class="hero__actions">
+          <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+          <a href="CV-Iasmin-Ribeiro-de-Souza.pdf" class="btn btn--ghost" download>Baixar CV</a>
+        </div>
+        <div class="hero__social">
+          <a href="https://github.com/IasminRDS" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/iasmin-ribeiro-de-souza-033536401" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:iasminrds1@gmail.com">E-mail</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Sobre ===== -->
+    <section id="sobre" class="section reveal">
+      <h2 class="section__title">Sobre mim</h2>
+      <div class="sobre">
+        <p>
+          Sou estudante de tecnologia em transição para o mercado, apaixonada por
+          construir soluções que unem <strong>desenvolvimento web</strong> e
+          <strong>análise de dados</strong>. Gosto de código organizado,
+          interfaces limpas e de transformar números em insights.
+        </p>
+        <p>
+          Estou em busca da minha primeira oportunidade como desenvolvedora, onde
+          eu possa contribuir, aprender com o time e crescer. Os projetos abaixo
+          mostram na prática o que já sei fazer.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Habilidades ===== -->
+    <section id="skills" class="section reveal">
+      <h2 class="section__title">Habilidades</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Front-end</h3>
+          <ul>
+            <li>React</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Back-end</h3>
+          <ul>
+            <li>Python</li><li>Flask</li><li>PHP</li><li>APIs REST</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Dados</h3>
+          <ul>
+            <li>SQL</li><li>pandas</li><li>Power BI</li><li>Matplotlib</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Ferramentas</h3>
+          <ul>
+            <li>Git &amp; GitHub</li><li>SQLite</li><li>Vite</li><li>VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projetos (preenchidos via JS) ===== -->
+    <section id="projetos" class="section reveal">
+      <h2 class="section__title">Projetos</h2>
+      <p class="section__sub">
+        Clique para ver o código no GitHub. Os apps web têm demo ao vivo.
+      </p>
+      <div id="projetos-grid" class="projetos"></div>
+    </section>
+
+    <!-- ===== Contato ===== -->
+    <section id="contato" class="section section--contato reveal">
+      <h2 class="section__title">Vamos conversar?</h2>
+      <p>
+        Estou aberta a oportunidades. Se meu perfil fez sentido para a sua vaga,
+        será um prazer conversar.
+      </p>
+      <div class="hero__actions">
+        <a href="mailto:iasminrds1@gmail.com" class="btn btn--primary">Enviar e-mail</a>
+        <a href="https://www.linkedin.com/in/iasmin-ribeiro-de-souza-033536401" target="_blank" rel="noopener" class="btn btn--ghost">
+          LinkedIn
+        </a>
+      </div>
+      <p class="contato__email">
+        <span id="email-texto">iasminrds1@gmail.com</span>
+        <button type="button" id="copiar-email" class="btn-copiar">Copiar</button>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="ano"></span> Iasmin Ribeiro de Souza · Feito com HTML, CSS e JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
