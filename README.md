@@ -27,7 +27,7 @@ Não é só uma página bonita — cada recurso foi feito à mão, sem framework
 | [Controle de Estoque](https://github.com/IasminRDS/Controle-de-Estoque) — app full-stack com CRUD, dashboard e alerta de estoque baixo | React · Flask · SQLite |
 | [Pipeline de ETL + Dashboard de Vendas](https://github.com/IasminRDS/Pipeline-de-ETL-Dashboard-de-Vendas) — do CSV bruto ao painel de BI | Python · pandas · SQLite |
 | [FinDash](https://github.com/IasminRDS/FinDash-Dashboard-Financeiro) — controle de finanças pessoais com gráficos interativos | React · Vite |
-| [Análise de Vendas com Python](https://github.com/IasminRDS/Anlise-de-Vendas-com-Python) — tratamento, indicadores e relatório | Python · pandas · matplotlib |
+| [Análise de Vendas com Python](https://github.com/IasminRDS/analise-de-vendas-python) — tratamento, indicadores e relatório | Python · pandas · matplotlib |
 | [Insights de Negócio com IA](https://github.com/IasminRDS/Insights_IA_Gemini) — CSV vira insight em linguagem natural | Python · Gemini API |
 | [API REST de Biblioteca](https://github.com/IasminRDS/API-REST-de-Biblioteca) — CRUD com validação e status HTTP corretos | Python · Flask |
 | [API de Produtos](https://github.com/IasminRDS/api-produtos-php) — PHP puro, com proteção contra SQL Injection | PHP · PDO · SQLite |

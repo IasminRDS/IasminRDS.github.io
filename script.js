@@ -35,7 +35,7 @@ const PROJETOS = [
     descricao:
       'O fluxo completo do analista: obter os dados, tratar com pandas, extrair indicadores, visualizar e comunicar num relatório final.',
     tags: ['Python', 'pandas', 'matplotlib'],
-    repo: 'https://github.com/IasminRDS/Anlise-de-Vendas-com-Python',
+    repo: 'https://github.com/IasminRDS/analise-de-vendas-python',
     demo: '',
   },
   {
