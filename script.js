@@ -172,6 +172,23 @@ function initCopiarEmail() {
   });
 }
 
+// ===== Evento de download do CV (Google Analytics) =====
+// A medição avançada do GA4 já registra downloads de .pdf como "file_download",
+// mas esse evento é genérico. Aqui disparamos um "download_cv" próprio, que
+// aparece separado nos relatórios. Se a tag do GA não tiver carregado (bloqueador
+// de anúncios, página aberta via file://), o clique segue normal e nada quebra.
+function initEventoCV() {
+  const btn = document.getElementById('baixar-cv');
+
+  btn.addEventListener('click', () => {
+    if (typeof gtag !== 'function') return;
+    gtag('event', 'download_cv', {
+      file_name: 'CV-Iasmin-Ribeiro-de-Souza.pdf',
+      link_text: btn.textContent.trim(),
+    });
+  });
+}
+
 // ===== Revela as seções conforme entram na tela =====
 function initReveal() {
   const alvos = document.querySelectorAll('.reveal');
@@ -194,6 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProjetos();
   initTema();
   initCopiarEmail();
+  initEventoCV();
   initReveal();
   document.getElementById('ano').textContent = new Date().getFullYear();
 });
